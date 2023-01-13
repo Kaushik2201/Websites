@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+</head>
+<body>
+    <form action=""> 
+        <h1> Payments Form </h1>
+        <h2> Contact Information </h2>
+        <h4>* Requierd Field</h4>
+        <p>
+            First Name :* <input type="text" name="fname" id="fname"  required>
+            Last Name :* <input type="text" name="lname" id="lname" required>
+        </p>
+        <p> Phone Number :* <input type="number" name="phone_number" id="phone_number" required> </p>
+        <fieldset>
+            <legend> Gender*  </legend>
+            <p> Male <input type="radio" name="gender" id="male"  required >
+            Female <input type="radio" name="gender" id="female" required>
+        Others <input type="radio" name="gender" id="others" required></p>
+        </fieldset>
+        <p> Address: <textarea name="address" id="address" cols="100" rows="7"></textarea></p>
+        <p>Email :* <input type="email" name="email" id="email" required></p>
+        <p>Pincode :* <input type="number" name="pincode" id="pincode" required></p>
+        <h2> Payment Information</h2>
+        <p> Card Type :* 
+            <select name="card_type" id="card_type" required>
+                <option value="">-- Select the card type--</option>
+                <option value="visa">Visa</option>
+                <option value="master_type">Master Card </option>
+                <option value="rupay">Rupay</option>
+            </select>
+        </p>
+        <p> 
+            Card Number :* <input type="number" name="card_number" id="card_number" required>
+        </p>
+        <p>
+            Valid till :* <input type="date" name="valid_till" id="valid_till" required>
+        </p>
+        <p>
+            CVV * <input type="password" name="cvv" id="cvv" required>
+        </p>
+        <p>
+            Pay Now <input type="submit" value="paynow">
+        </p>
+    </form>
+    
+</body>
+</html>
